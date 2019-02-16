@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(80deg, #8360c3 10%, #2ebf91 100%);
+}
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    background-color: white;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 5px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    .conteudo{
+        width: 80vw;
+        height: 90vh;
+    }
+}
+@media(max-width: 500px){
+    .conteudo{
+        width: 90vw;
+    }
+}
+
+h2 {
+    color: #2ebf91;
+    display: inline;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+p {
+    display: inline;
+    color: #8360c3;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+div.btn {
+    position: absolute;
+    margin-top: 10%;
+}
+
+a.btn-voltar {
+    font-size: 1.8em;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.btn-voltar {
+    border: 1px solid #2ebf91;
+    background-color: #2ebf91;
+    color: white;
+}
+
+a.btn-voltar:hover {
+    background-color: #259974;
+    text-decoration: underline;
+}
+
+@media(max-width: 768px){
+    div.btn{
+        margin-top: 25%;
+    }
+}
+@media(max-width: 500px){
+    div.btn{
+        margin-top: 30%;
+    }
+}
+@media(min-width: 1680px){
+    div.btn{
+        margin-top: 7%;
+    }
+}

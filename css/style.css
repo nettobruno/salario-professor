@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(80deg, #8360c3 10%, #2ebf91 100%);
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+/* Estilização da div que envolve o formulário */
+.centro {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Formulário */
+form {
+    background-color: white;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    form{
+        width: 80vw;
+        height: 90vh;
+    }
+}
+@media(max-width: 500px){
+    form{
+        width: 90vw;
+    }
+}
+
+
+.itens{
+    display: inline-block;
+    width: 100%;
+}
+
+/* Itens do formulário */
+input[type=text], input[type=number]{
+    border: 1px solid #2ebf91;
+    border-radius: 20px;
+    color: #2ebf91;
+    width: 50%;
+    font-size: 1.5em;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+    input[type=text], input[type=number]{
+        width: 80%;
+    }
+}
+@media(max-width: 500px){
+    input[type=text], input[type=number]{
+        width: 90%;
+    }
+}
+
+input[type=text]:focus, input[type=number]:focus{
+    box-shadow: 0 0 .2em .2pt #2ebf91;
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #a9a9a9;
+}
+
+legend{
+    font-size: 1.5em;
+    color: #2ebf91;
+}
+
+input[type=radio]{
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+label[for=nao], label[for=sim]{
+    font-size: 1.5em;
+    color: #a9a9a9;
+}
+
+select{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #a9a9a9;
+}
+
+option{
+    color: #a9a9a9;
+}
+
+/* Botões de enviar e resetar */
+button.btn{
+    font-size: 1.8em;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+button.btn[type=submit]{
+    border: 1px solid #2ebf91;
+    background-color: #2ebf91;
+    color: white;
+}
+
+button.btn[type=submit]:hover{
+    background-color: #259974;
+    text-decoration: underline;
+}
+
+button.btn[type=reset]{
+    border: 1px solid #8360c3;
+    background-color: #8360c3;
+    color: white;
+}
+
+button.btn[type=reset]:hover{
+    background-color: #5E458C;
+    text-decoration: underline;
+}

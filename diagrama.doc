@@ -1,0 +1,23 @@
+Projeto Exercício 1
+_______________________
+PROFESSOR
+- $nome: string
+- $sexo: string
+- $aulas: int
+- $valorAula: double
+- $especialista: boolean
+________________________
++ getters & setters
++ construct
++ calcularSalario(): double
++ exibir(): string
+
+
+
+
+
+Calculo do salário{
+    $aulas * $valorAula * 4.5
+
+    Se for especialista ganha mais 15%s
+}
